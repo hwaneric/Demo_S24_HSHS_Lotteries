@@ -1,4 +1,4 @@
-# T4SG Starter Project
+# HSHS Lotteries Documentation
 
 - [T4SG Starter Project](#t4sg-starter-project)
   - [Introduction](#introduction)
@@ -178,6 +178,11 @@ We implemented a [Github Actions](https://docs.github.com/en/actions) workflow f
    - Require status checks to pass before merging
      - Require branches to be up to date before merging
      - **Required status checks: "Format source code and check for linting errors"** (important to get our CI workflow to run!)
+    
+
+#### secrets.json 
+To access Google's services (particularly, the Google Forms API), this project needs to have a secrets.json file added to the source directory. To generate this secrets.json, go to the Google Cloud console. In your project's Google Cloud credentials seciton, make a service account (if you do not have one already). Click into the service account and go to "Keys." Click on "Add a Key" and select "json." Then, a new json file should be downloaded to your computer. Rename that file "secrets.json" and add it to the project's source directory. 
+
 
 ---
 
@@ -308,6 +313,8 @@ Feel free to reach out for help!
 The project uses a package from the popular [T3 stack](https://create.t3.gg/) to validate and provide typesafety to environment variables, so the process of adding an environment variable (for use on the client or server) is slightly more involved than just updating `.env.local`. Instructions for managing environment variables are [here](https://create.t3.gg/en/usage/env-variables).
 
 ---
+
+
 
 ## Development tools
 
